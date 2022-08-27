@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "setup",
+      "setup": "sudo -H pip3 install setuptools pytest flake8 pep8-naming flake8-docstrings pandas",
+      "run": "python3 -m pip install numpy",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": null
+    },
+    {
+      "name": "exercise-8-2",
+      "setup": "pytest tests/test_mfe.py",
+      "run": "pytest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "flake8",
+      "setup": "",
+      "run": "flake8",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
